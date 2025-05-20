@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Galeri Buku </title>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyBookFav</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#koleksi">Koleksi</a></li>
+        
+      </ul>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-image">
+      <img src="img/hero.png" alt="Hero Image" />
+    </div>
+    <div class="hero-text">
+      <h1>Hallo, Selamat Datang</h1>
+      <p>Galeri Buku yang selalu menghipnotismu untuk membaca</p>
+    </div>
+  </section>
+
+  <!-- feature -->
+
+  <div class="grid">
+    <div class="grid-item">
+      <img src="img/3.jpeg" alt="Item 5" />
+      <div class="price-tag">Rp 120.000</div>
+    </div>
+    <div class="grid-item">
+      <img src="img/buku2.jpeg" alt="Item 1" />
+      <div class="price-tag">Rp 75.000</div>
+    </div>
+    <div class="grid-item">
+      <img src="img/fs.jpeg" alt="Item 2" />
+      <div class="price-tag">Rp 90.000</div>
+    </div>
+    <div class="grid-item">
+      <img src="img/fs2.jpeg" alt="Item 6" />
+      <div class="price-tag">Rp 100.000</div>
+    </div>
+    <div class="grid-item">
+      <img src="img/1.jpeg" alt="Item 3" />
+      <div class="price-tag">Rp 65.000</div>
+    </div>
+    
+    <div class="grid-item">
+      <img src="img/4.png" alt="Item 4" />
+      <div class="price-tag">Rp 80.000</div>
+    </div>
+    <div class="grid-item">
+      <img src="img/3.jpeg" alt="Item 5" />
+      <div class="price-tag">Rp 120.000</div>
+    </div>
+    <div class="grid-item">
+      <img src="img/2.jpeg" alt="Item 6" />
+      <div class="price-tag">Rp 100.000</div>
+    </div>
+   
+  </div>
+  
+  
+
+  
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
